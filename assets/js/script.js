@@ -59,6 +59,42 @@ $('.personal-menu').on('click', function(e){
 
 
 
+let usersSwiper = new Swiper(".review-slider", {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 16,
+    breakpoints: {
+        '1450': {
+            slidesPerView: 4,
+            spaceBetween: 16,
+        },
+        '1020': {
+            slidesPerView: 3,
+            spaceBetween: 16,
+            slidesPerGroup: 1,
+        },
+        '570': {
+            slidesPerView: 3,
+            spaceBetween: 16,
+        },
+        '320': {
+            slidesPerView: 2,
+            spaceBetween: 16,
+        },
+    }
+
+});
+
+
+
+
+
+
+
+
+
+
+
 
 
 

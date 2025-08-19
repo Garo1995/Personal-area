@@ -196,13 +196,12 @@ h2{
 .review-scroll{
     margin-top: 16px;
 }
-.review-flex{
-    gap: 16px;
-
+.review-slider{
+    border-radius: 16px;
 }
 .review-box{
     position: relative;
-    width: 25%;
+    width: 100%;
     border-radius: 16px;
     border: 1px solid var(--colors-border-secondary);
     display: flex;
@@ -211,9 +210,7 @@ h2{
     width: 100%;
     border-radius: 16px;
 }
-.review-box:last-child{
-    width: 50%;
-}
+
 .review-name{
     position: absolute;
     bottom: 0;
@@ -410,26 +407,11 @@ table tbody tr td{
     }
 }
 @media (max-width: 1199px){
-    .review-scroll{
-        overflow-x: scroll;
-        padding-left: 16px;
-        margin-top: 0;
-    }
-    .review-scroll::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-    }
-    .review-scroll::-webkit-scrollbar-thumb {
-        width: 0;
-        height: 0;
-    }
+
     .personal-title{
         padding: 16px;
     }
-    .review-flex {
-        gap: 16px;
-        width: 1277px;
-    }
+
     .personal-main{
         padding: 0;
     }
@@ -482,6 +464,14 @@ table tbody tr td{
     .table-main table {
         width: 1400px;
     }
+    .review-scroll{
+        margin-top: 0;
+        padding-left: 16px;
+        overflow: hidden;
+    }
+    .review-slider{
+        width: 1200px;
+    }
 }
 
 
@@ -507,6 +497,9 @@ table tbody tr td{
     }
     .pagination-mobile{
         display: flex;
+    }
+    .review-slider {
+        width: 640px;
     }
 
 }
