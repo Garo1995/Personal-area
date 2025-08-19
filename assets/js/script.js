@@ -101,6 +101,11 @@ $('.card-account-open').on('click', function(e){
     $('.card-account-mod').toggleClass('card-account-active')
 });
 
+
+$('.card-account-mod').on('click', function(e){
+    e.stopPropagation();
+});
+
 $(window).on('click', function (e) {
     let accountSort = $('.card-account-mod');
     if (e.target !== accountSort) {
