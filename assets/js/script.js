@@ -96,8 +96,17 @@ if (localStorage.getItem('theme') === 'dark') {
 
 
 
-$('.card-account-open').on('click', function(){
+$('.card-account-open').on('click', function(e){
+    e.stopPropagation();
     $('.card-account-mod').toggleClass('card-account-active')
+});
+
+$(window).on('click', function (e) {
+    let accountSort = $('.card-account-mod');
+    if (e.target !== accountSort) {
+        accountSort.removeClass('card-account-active');
+    }
+
 });
 
 $(document).ready(function () {
