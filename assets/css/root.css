@@ -1,0 +1,105 @@
+:root {
+    --silver-icon-color: #A4A7AE;
+    --title-color: #181D27;
+    --bg-color: #ffffff;
+    --colors-border-secondary: #E9EAEB;
+    --colors-effects-shadows: rgba(10, 13, 18, 0.05);
+    --colors-utility-blue-50: #EFF8FF;
+    --utility-blue-light-500: #2E90FA;
+    --colors-bg-secondary: #FAFAFA;
+    --colors-bg-tertiary: #F5F5F5;
+    --colors-text-quaternary-500: #717680;
+    --colors-act-text-quaternary: #414651;
+    --colors-bg-primary: #FFF;
+    --colors-fg-success: #17B26A;
+    --colors-text-tertiary: #535862;
+    --colors-bg-primary-hover: #FAFAFA;
+    --colors-bg-primary-tab: #FAFAFA;
+    --colors-border-alt: rgba(0, 0, 0, 0.08);
+    --text-secondary-hover: #252B37;
+    --alpha-white-30: rgba(255, 255, 255, 0.30);
+    --component-utility-blue: #B2DDFF;
+    --component-utility-blue-700: #175CD3;
+    --component-utility-orange-700: #B93815;
+    --component-utility-orange-200: #F9DBAF;
+    --component-utility-orange-50: #FEF6EE;
+    --colors-text-secondary-700: #414651;
+    --colors-border-primary: #D5D7DA;
+    --colors-text-placeholder: #717680;
+    --gradient-skeuemorphic-border: rgba(255, 255, 255, 0.12);
+
+    --effects-shadow-01: rgba(10, 13, 18, 0.08);
+    --effects-shadow-02: rgba(10, 13, 18, 0.03);
+    --effects-shadow-03: rgba(10, 13, 18, 0.04);
+    --effects-shadow-04: rgba(10, 13, 18, 0.05);
+    --colors-shadow-skeumorphic: rgba(10, 13, 18, 0.18);
+    --colors-shadow-skeumorphic-two: rgba(10, 13, 18, 0.05);
+    --colors-shadow-skeumorphic-three: rgba(10, 13, 18, 0.05);
+
+    --blue-utility-gray-blue: #363F72l;
+    --utility-gray-blue-200: #D5D9EB;
+    --utility-gray-blue-50: #F8F9FC;
+    --utility-error-200: #FECDCA;
+    --utility-error-50: #FEF3F2;
+    --utility-error-700: #B42318;
+    --utility-error-900: #F04438;
+    --bg-primary-solid: #0A0D12;
+    --utility-success-200: #ABEFC6;
+    --utility-success-50: #ECFDF3;
+    --utility-success-700: #067647;
+}
+
+.dark {
+    --silver-icon-color: #61656C;
+    --title-color: #F7F7F7;
+    --bg-color: #0C0E12;
+    --colors-border-secondary: #22262F;
+    --colors-effects-shadows: rgba(255, 255, 255, 0.00);
+    --colors-utility-blue-50: #102A56;
+    --utility-blue-light-500: #2E90FA;
+    --colors-bg-secondary: #0C0E12;
+    --colors-bg-tertiary: #0BA5EC;
+    --colors-text-quaternary-500: #94979C;
+    --colors-act-text-quaternary: #CECFD2;
+    --colors-bg-primary: #13161B;
+    --colors-bg-primary-tab: #13161B;
+    --colors-fg-success: #47CD89;
+    --colors-text-tertiary: #94979C;
+    --colors-bg-primary-hover: #22262F;
+    --colors-border-alt: #373A41;
+    --text-secondary-hover: #ECECED;
+    --alpha-white-30: rgba(12, 14, 18, 0.30);
+    --component-utility-blue: #1849A9;
+    --component-utility-blue-700: #84CAFF;
+    --component-utility-orange-700: #F7B27A;
+    --component-utility-orange-200: #932F19;
+    --component-utility-orange-50: #511C10;
+    --colors-text-secondary-700: #CECFD2;
+    --colors-border-primary: #373A41;
+    --colors-text-placeholder: #85888E;
+    --gradient-skeuemorphic-border: rgba(255, 255, 255, 0.12);
+
+
+
+    --effects-shadow-01: rgba(255, 255, 255, 0.00);
+    --effects-shadow-02: rgba(255, 255, 255, 0.00);
+    --effects-shadow-03: rgba(255, 255, 255, 0.00);
+    --effects-shadow-04: rgba(255, 255, 255, 0.00);
+
+    --colors-shadow-skeumorphic: rgba(12, 14, 18, 0.18);
+    --colors-shadow-skeumorphic-two: rgba(12, 14, 18, 0.05);
+    --colors-shadow-skeumorphic-three: rgba(255, 255, 255, 0.00);
+    --blue-utility-gray-blue: #B3B8DB;
+    --utility-gray-blue-200: #293056;
+    --utility-gray-blue-50: #0D0F1C;
+    --utility-error-200: #912018;
+    --utility-error-50: #55160C;
+    --utility-error-700: #FDA29B;
+    --utility-error-900: #F04438;
+    --bg-primary-solid: #13161B;
+    --utility-success-200: #085D3A;
+    --utility-success-50: #053321;
+    --utility-success-700: #75E0A7;
+
+
+}

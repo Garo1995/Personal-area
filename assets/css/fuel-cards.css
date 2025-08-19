@@ -1,0 +1,444 @@
+
+
+.table-fuel-cards thead tr th{
+    padding: 18px 12px;
+    text-align: left;
+    width: 168px;
+}
+.table-fuel-cards thead tr th:first-child{
+    width: 44px;
+}
+.table-fuel-cards thead tr th:last-child{
+    text-align: right;
+}
+
+.table-fuel-cards tbody tr td{
+    padding: 18px 12px;
+}
+
+
+
+
+
+
+.table-checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 20px;
+    width: 20px;
+}
+.table-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 6px;
+    border: 1px solid var(--colors-border-primary);
+}
+
+.table-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.table-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.table-checkbox input:checked ~ .checkmark{
+    background: var(--utility-blue-light-500);
+}
+
+.in-progress{
+    color: var(--blue-utility-gray-blue);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    border-radius: 999px;
+    border: 1px solid var(--utility-gray-blue-200);
+    background: var(--utility-gray-blue-50);
+    padding: 2px 8px;
+    width: max-content;
+}
+
+
+
+
+.tab-blocked{
+    display: flex;
+    padding: 2px 6px 2px 8px;
+    align-items: center;
+    gap: 2px;
+    border-radius: 999px;
+    border: 1px solid var(--utility-error-200);
+    background: var(--utility-error-50);
+    width: max-content;
+}
+.tab-blocked span{
+    color: var(--utility-error-700);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.tab-blocked-info{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.help-circle{
+    background-color: var(--utility-error-900);
+}
+.tab-blocked-info:hover .tab-blocked-text{
+    display: block;
+}
+
+.tab-blocked-text{
+    display: none;
+    width: 152px;
+    position: absolute;
+    bottom: 37px;
+    left: -5px;
+
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: var(--bg-primary-solid);
+
+    box-shadow: 0 12px 16px -4px var(--effects-shadow-01), 0 4px 6px -2px var(--effects-shadow-02), 0 2px 2px -1px var(--effects-shadow-03);
+}
+.tab-blocked-text:after{
+    content: "";
+    position: absolute;
+    display: block;
+    left: 15px;
+    bottom: -4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 1px;
+    transform: rotate(45deg);
+    background: var(--bg-primary-solid);
+
+}
+.tab-blocked-text p{
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.tab-active{
+    border-radius: 999px;
+    border: 1px solid var(--utility-success-200);
+    background: var(--utility-success-50);
+    display: flex;
+    padding: 2px 8px;
+    align-items: center;
+    color: var(--utility-success-700);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height:  18px;
+    width: max-content;
+}
+.change-card-cnt{
+    padding: 24px;
+
+}
+.change-card-tab{
+    border: 1px solid var(--colors-border-secondary);
+    background: var(--bg-color);
+    border-radius: 12px;
+}
+
+.change-card-head ul li{
+    height: 44px;
+    color: var(--colors-text-quaternary-500);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    padding: 13px 4px 13px 24px;
+    width: 100%;
+    background: var(--colors-bg-primary-tab);
+}
+.icon-plus{
+    background-color: #ffffff;
+}
+.change-card-head ul li:first-child{
+    border-radius: 12px 0 0 0;
+}
+.change-card-head ul li:last-child{
+    border-radius: 0 12px 0 0;
+
+}
+.group-for-cards{
+    border-top: 1px solid var(--colors-border-secondary);
+    border-bottom: 1px solid var(--colors-border-secondary);
+    padding: 24px 24px;
+}
+.group-for-cards h3{
+    color: var(--colors-act-text-quaternary);
+    margin-bottom: 6px;
+}
+
+.change-card-body li{
+    width: 100%;
+    color: var(--title-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 26px 24px;
+}
+
+.change-card-body li small{
+    display: none;
+}
+
+.change-card-mod{
+    max-width: 752px;
+    width: 100%;
+}
+.btn-cancel{
+    font-weight: 600;
+}
+.change-card-mod .all-contracts-drop {
+    width: 100%;
+}
+.card-details-mod{
+    max-width: 552px;
+    width: 100%;
+}
+.card-details-cnt{
+    margin-top: 26px;
+    gap: 12px;
+    width: 100%;
+
+}
+.card-details-name{
+    gap: 16px;
+    width: 100%;
+}
+.card-details-name p{
+    color: var(--colors-act-text-quaternary);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    max-width: 200px;
+    width: 100%;
+}
+.card-details-name span{
+    color: var(--colors-text-tertiary);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+
+.fuel-single{
+    padding-top: 16px;
+}
+.back-fuel{
+    gap: 12px;
+}
+.back-fuel .arrow-left{
+    background-color: var(--title-color);
+}
+.fuel-single-cnt{
+    margin-top: 32px;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--colors-border-secondary);
+    background: var(--colors-bg-primary-tab);
+}
+.fuel-single-cnt .btn-blue{
+    margin-top: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+.create-limit-mod{
+    max-width: 600px;
+    width: 100%;
+}
+.form-select-label{
+    display: flex;
+    width: 100%;
+    max-width: 336px;
+}
+.jq-selectbox{
+    margin-top: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--colors-border-primary);
+    background: var(--bg-color);
+    box-shadow: 0 1px 2px 0 var(--effects-shadow-04);
+    width: 100%;
+    height: 36px;
+    color: var(--colors-act-text-quaternary);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.jq-selectbox::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    width: 6px;
+    height: 6px;
+    border: solid var(--colors-border-primary);
+    border-width: 0 2px 2px 0;
+    transform: translateY(-50%) rotate(45deg);
+    pointer-events: none;
+    transition: 0.3s;
+
+}
+.jq-selectbox.opened::after {
+    transform: rotate(-135deg);
+}
+.jq-selectbox__select-text{
+    color: var(--colors-act-text-quaternary);
+}
+
+
+.jq-selectbox__dropdown{
+    top: 108%;
+    left: 0;
+    right: 0;
+    background: var(--bg-color);
+    border-radius: 8px;
+    padding: 8px;
+    z-index: 10;
+    width: 100% !important;
+    border: 1px solid var(--colors-border-primary);
+
+}
+.jq-selectbox li, .jq-select-multiple li{
+    padding: 10px 16px;
+    cursor: pointer;
+    color: var(--colors-act-text-quaternary);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+.jq-selectbox li:hover, .jq-select-multiple li:hover{
+    background: #F5F5F5;
+
+}
+
+
+
+
+@media (max-width: 1399px){
+    .table-fuel-cards{
+        overflow-x: scroll;
+    }
+    .table-fuel-cards table{
+        width: 1400px;
+    }
+}
+
+@media (max-width: 1199px){
+    .fuel-single {
+        padding: 16px 16px 0;
+    }
+}
+
+@media (max-width: 1020px){
+    .fuel-single-flex{
+        flex-direction: column;
+        margin-top: 16px;
+        gap: 16px;
+    }
+    .fuel-single-flex .card-details-cnt {
+        margin-top: 0;
+    }
+    .fuel-single-cnt {
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 570px){
+    .add-plus span{
+        display: none;
+    }
+    .add-plus  {
+        padding: 10px 10px;
+    }
+    .group-for-cards {
+        padding: 16px;
+    }
+    .change-card-head{
+        display: none;
+    }
+    .change-card-cnt {
+        padding: 16px;
+    }
+    .change-card-tab {
+        border: unset;
+    }
+    .change-card-body li {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 14px 14px;
+        display: flex;
+        flex-direction: column;
+        width: 49%;
+    }
+    .change-card-body li small {
+        display: block;
+    }
+    .change-card-body ul{
+        flex-wrap: wrap;
+    }
+    .card-details-name {
+        gap: 2px;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-details-cnt {
+        margin-top: 5px;
+    }
+    .fuel-single-cnt .btn-blue {
+        width: 100%;
+    }
+}
