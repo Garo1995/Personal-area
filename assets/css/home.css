@@ -22,7 +22,6 @@ h2{
 }
 
 
-
 .card-account{
     border-radius: 12px;
     border: 1px solid var(--colors-border-secondary);
@@ -34,6 +33,7 @@ h2{
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
+    cursor: pointer;
 }
 .card-account-flex{
     gap: 8px;

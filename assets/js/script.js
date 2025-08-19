@@ -96,7 +96,7 @@ if (localStorage.getItem('theme') === 'dark') {
 
 
 
-$('.card-account-open').on('click', function(e){
+$('.card-account').on('click', function(e){
     e.stopPropagation();
     $('.card-account-mod').toggleClass('card-account-active')
 });
